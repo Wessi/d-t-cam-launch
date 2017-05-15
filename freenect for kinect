@@ -1,0 +1,22 @@
+Installation
+------------
+freenect:
+sudo apt-get install libfreenect-dev
+sudo apt-get install ros-indigo-freenect-launch
+
+asus:
+sudo apt-get install ros-indigo-openni2-camera
+sudo apt-get install ros-indigo-openni2-launch
+
+Running
+-------
+roscore
+rosrun freenect_camera freenect_node
+
+OR
+roslaunch freenect_launch freenect.launch
+
+Asus:
+rosrun openni2_camera openni2_camera_node 
+
+

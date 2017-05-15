@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find dlib_puppeteering)/launch/dlib_value_usbcam.launch"/>
+    <node name="dlib_listener_node" pkg="dlib_puppeteering" type="dlib_listener_node" output="screen"/>
+    <node name="dlib_mapper" pkg="dlib_puppeteering" type="blendshapes_mapper.py" output="screen"/>
+</launch>

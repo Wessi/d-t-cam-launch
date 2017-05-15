@@ -1,0 +1,12 @@
+<launch>
+    <node name="freenect_node" pkg="freenect_camera" type="freenect_node"/>
+</launch>
+
+<!--
+roslaunch open[rospack] Warning: error while crawling /home/wessi: boost::filesystem::status: Permission denied: "/home/wessi/.gvfs"
+[rospack] Warning: error while crawling /home/wessi: boost::filesystem::status: Permission denied: "/home/wessi/.gvfs"
+
+Solution:
+sudo umount /home/wessi/.gvfs
+rm -rf .gvfs/
+-->

@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find dlib_puppeteering)/launch/asuscam.launch"/> <!--camera-->
+    <node name="dlib_puppeteering_node" pkg="dlib_puppeteering" type="dlib_puppeteering_node" output="screen">
+    </node>
+</launch>
